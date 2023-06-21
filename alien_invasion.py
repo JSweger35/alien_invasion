@@ -7,8 +7,8 @@ from settings import Settings
 class AlienInvasion:
     """Overall Class to manage game assets and behavior."""
     
-    def_init_(self):
-    """Initialize the game, and create game resources."""
+    def __init__(self):
+        """Initialize the game, and create game resources."""
         pygame.init()
         self.settings = Settings()
         
@@ -20,10 +20,10 @@ class AlienInvasion:
         self.bg_color = (230, 230, 230)
         
     def run_game(self):
-    """Start the main loop for the game"""
+        """Start the main loop for the game"""
         while True:
             # watch for keyboard and mouse events
-            for event in pygame.event.get()
+            for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     sys.exit()
                     
@@ -33,7 +33,7 @@ class AlienInvasion:
             # Make the most recently drawn screen visible.
             pygame.display.flip()
             
-if_name_=='_main_':
+if __name__ == '_main_':
     #Make a gmae instance, and run the game
     ai = AlienInvasion()
     ai.run_game()
