@@ -11,3 +11,10 @@ class Ship:
         #Load ship image and get its rect
         self.image = pygame.image.Load('images/ship.bmp')
         self.rect = self.image.get_rect()
+        
+        # Start each new shipp at the bottom center of the screen
+        self.rect.midbottom = self.screen_rect.bottom
+        
+    def blitme(self):
+        """Draw the ship at its current location."""
+        self.screen.blit(self.image, self.rect)
