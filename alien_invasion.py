@@ -63,7 +63,11 @@ class AlienInvasion:
             self.ship.moving_right = False
         elif event.key == pygame.K_LEFT:
             self.ship.moving_left = False
-                    
+            
+    def _fire_bullet(self):
+        """Create a new bullet and add it to the bullets group"""
+        new_bullet = Bullet(self)
+        self.bullets.add(new_bullet)
             
     def _update_screen(self):
         """Update images on the screen, and flip to the new screen.""" 
