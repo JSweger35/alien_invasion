@@ -3,8 +3,8 @@ import sys
 import pygame
 
 from settings import Settings
-
 from ship import Ship
+from bullet import Bullet
 
 class AlienInvasion:
     """Overall Class to manage game assets and behavior."""
