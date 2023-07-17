@@ -1,7 +1,7 @@
 import pygame
 from pygame.sprite import Sprite
 
-class Alien(sprite):
+class Alien(Sprite):
     """A Class to represent a signel alien in the fleet."""
     
     def __init__(self, ai_game):

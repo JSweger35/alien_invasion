@@ -22,7 +22,7 @@ class AlienInvasion:
         
         self.ship = Ship(self)
         self.bullets = pygame.sprite.Group()
-        self.aliens = pygame.sprite.Grou()
+        self.aliens = pygame.sprite.Group()
         
         self._create_fleet()
         
