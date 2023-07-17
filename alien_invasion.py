@@ -29,6 +29,12 @@ class AlienInvasion:
         #Set the background Color
         self.bg_color = (230, 230, 230)
         
+    def _create_fleet(self):
+        """Create the fleet of aliens"""
+        # Make an alien
+        alien = Alien(self)
+        self.aliens.add(alien)
+        
     def run_game(self):
         """Start the main loop for the game"""
         while True:
