@@ -74,6 +74,10 @@ class AlienInvasion:
             if bullet.rect.bottom <= 0:
                 self.bullets.remove(bullet)
         print(len(self.bullets))
+        
+    def _update_aliens(self):
+        """Update the positions of all aliens in the fleet."""
+        self.aliens.update()
             
     def _check_events(self):
         """Respond to keypresses and mouse events"""
