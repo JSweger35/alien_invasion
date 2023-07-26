@@ -127,6 +127,9 @@ class AlienInvasion:
         # Create a new fleet and center the ship
         self._create_fleet()
         self.ship.center_ship()
+        
+        # Pause
+        sleep(0.5)
             
     def _check_events(self):
         """Respond to keypresses and mouse events"""
