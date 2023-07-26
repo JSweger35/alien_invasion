@@ -117,6 +117,12 @@ class AlienInvasion:
             
     def _ship_hit(self):
         """Respond to ship being hit by alien"""
+        # Decrement ships_left
+        self.stats.ship_left -= 1
+        
+        # Get rid of any remaining aliens and bullets.
+        self.aliens.empty()
+        self.bullets.empty()
             
     def _check_events(self):
         """Respond to keypresses and mouse events"""
