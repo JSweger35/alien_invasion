@@ -198,6 +198,10 @@ class AlienInvasion:
         for bullet in self.bullets.sprites():
             bullet.draw_bullet()
         self.aliens.draw(self.screen)
+        
+        # Draw the play button if game is innactive
+        if not self.stats.game_active:
+            self.play_button.draw_button()
                     
         # Make the most recently drawn screen visible.
         pygame.display.flip()
