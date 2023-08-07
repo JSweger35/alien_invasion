@@ -35,6 +35,9 @@ class AlienInvasion:
         #Set the background Color
         self.bg_color = (230, 230, 230)
         
+        # Make the play button
+        self.play_button = Button(self, "Play")
+        
     def _create_fleet(self):
         """Create the fleet of aliens"""
         # Make an alien and find the number of aliens in a row
