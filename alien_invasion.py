@@ -170,6 +170,8 @@ class AlienInvasion:
     def _check_play_button(self, mouse_pos):
         """Start a new game when the player clicks Play"""
         if self.play_button.rect.collidepoint(mouse_pos):
+            # Reset the game stats
+            self.stats.reset_stats()
             self.stats.game_active = True
                 
     def _check_keydown_events(self,event):
