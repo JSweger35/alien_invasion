@@ -173,6 +173,9 @@ class AlienInvasion:
             # Reset the game stats
             self.stats.reset_stats()
             self.stats.game_active = True
+            
+            # Get rid of any remaining aliens and bullets
+            self.aliens.empty()
                 
     def _check_keydown_events(self,event):
         """Respond to keypresses"""
