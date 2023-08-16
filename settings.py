@@ -28,8 +28,11 @@ class Settings:
         
         self.initialize_dynamic_settings()
         
-        def increase_speed(self):
-            """Increase speed settings."""
-            self.ship_speed *= self.speedup_scale
-            self.bullet_speed *= self.speedup_scale
-            self.alien_speed *= self.speedup_scale
+    def initialize_dynamic_settings(self):
+        
+        
+    def increase_speed(self):
+        """Increase speed settings."""
+        self.ship_speed *= self.speedup_scale
+        self.bullet_speed *= self.speedup_scale
+        self.alien_speed *= self.speedup_scale
