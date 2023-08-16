@@ -15,3 +15,10 @@ class Scoreboard:
         
         # Prepare the initial score image
         self.prep_score()
+        
+    def prep_score(self):
+        """Turn the score into a rendered image."""
+        score_str = str(self.stats.score)
+        self.score_image = self.font.render(scor_str, True, self.text_color, self.settings.bg_color)
+        
+        # Display the score at the top right of the screen. 
