@@ -110,7 +110,7 @@ class AlienInvasion:
             self.bullets, self.aliens, True, True)
         
         if collisions:
-            for alines in collisions.values():
+            for aliens in collisions.values():
                 self.stats.score += self.settings.alien_points*len(aliens)
             self.sb.prep_score()
         
