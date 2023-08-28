@@ -16,6 +16,7 @@ class Scoreboard:
         # Prepare the initial score images.
         self.prep_score()
         self.prep_high_score()
+        self.prep_level()
         
     def prep_high_score(self):
         """Turn the high score into a rendered image."""
