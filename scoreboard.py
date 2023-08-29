@@ -51,9 +51,10 @@ class Scoreboard:
         self.score_rect.top = 20
         
     def show_score(self):
-        """Draw score to the screen."""
+        """Draw scores and level to the screen."""
         self.screen.blit(self.score_image, self.score_rect)
         self.screen.blit(self.high_score_image, self.high_score_rect)
+        self.screen.blit(self.level_image, self.level_rect)
         
     def check_high_score(self):
         """Check to see if there's a new high score."""
